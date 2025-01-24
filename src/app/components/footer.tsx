@@ -14,6 +14,7 @@ export default function Footer({ social }: Props) {
             >
                 <div className="flex flex-col md:flex-row gap-2 md:gap-4 text-center">
                     {social.map((link: any) => (
+                        // eslint-disable-next-line react/jsx-key
                         <Link
                             href={link.link}
                             target="_blank"

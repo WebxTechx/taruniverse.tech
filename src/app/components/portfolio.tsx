@@ -14,6 +14,7 @@ export default function Portfolio({ projects }: Props) {
             </h2>
             <div className="flex flex-col gap-3">
                 {projects.map((project: any) => (
+                    // eslint-disable-next-line react/jsx-key
                     <Link
                         href="https://ninja-sketch.vercel.app/"
                         target="_blank"
@@ -47,6 +48,7 @@ export default function Portfolio({ projects }: Props) {
                         </p>
                         <ul className="flex items-center">
                             {project.skills.map((skill:any) => (
+                                // eslint-disable-next-line react/jsx-key
                                 <li
                                 className="mt-2 md:mt-3 text-blue-200 py-1 text-xs flex-wrap rounded flex items-start"
                             >

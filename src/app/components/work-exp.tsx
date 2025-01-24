@@ -26,6 +26,7 @@ export default function WorkExp({ exp }: Props) {
                     </p>
                     <ul className="flex flex-wrap items-center gap-[6px] mt-3 md:mt-0">
                         {data.skills.map((skill: any) => (
+                            // eslint-disable-next-line react/jsx-key
                             <li
                                 className="shadow md:mt-3 bg-blue-100 text-blue-200 py-1 px-2 border border-border text-xs rounded"
                             >
